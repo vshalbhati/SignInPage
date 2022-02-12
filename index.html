@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/index.css">
+<title>Sign In</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="box">
+
+<h1>Log In Here</h1>
+
+<div class="username">
+    <div class="image">
+        <img src="assets/user.png" style="height: 2em;">
+    </div>
+<input type="username" name="username" id="username" placeholder=" Enter Your Username">
+</div> 
+
+<div class="password">
+    <div class="image">
+        <img src="assets/padlock.png" style="height: 2em;">
+    </div>
+<input type="password" name="password" id="password" placeholder=" Enter Your Password">
+</div>
+ 
+<button onclick="message()" >Log In</button>
+<script>
+    function message(){
+        var str1= document.getElementById("username").value;
+        var str2= document.getElementById("password").value;
+        if([str1]==0 && [str2]==0 ){
+            swal("Warning!", "Enter username and password!", "warning");
+        }
+        else{
+        if([str1]==0){
+            swal("Warning!", "Enter theusername!", "warning");
+        }
+        if([str2]==0){
+            swal("Warning!", "Enter the password!", "warning");
+        }
+    }
+    }
+</script>
+<h2>Forgot your password?</h2>
+<h2>Don't have an account?</h2>
+
+</div>
+
+
+</body>
+
+</html>
